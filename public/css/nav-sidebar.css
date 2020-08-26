@@ -1,0 +1,415 @@
+:root {
+    --main-bg-color: #1b1e2d;
+    --sub-links-color: #4a5568;
+    --font-colors-toChange: #fff;
+}
+
+
+/* Start the left side bar  */
+
+.left-sidebar {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    width: 15%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.small-left-sidebar {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    width: 7%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+.left-sidebar .logo {
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.small-left-sidebar .logo {
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 12px;
+    color: var(--font-colors-toChange);
+    text-align: center;
+}
+
+.left-sidebar .single-option,
+.small-left-sidebar .single-option {
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: var(--font-colors-toChange);
+}
+
+.left-sidebar .single-option .dropdown-btn {
+    display: block;
+    width: 100%;
+    outline: none;
+}
+
+.left-sidebar .single-option .dropdown-container {
+    display: none;
+    background-color: var(--main-bg-color);
+}
+
+.left-sidebar .single-option .dropdown-container a {
+    display: block;
+    padding: 10px 0;
+    margin-top: 6px;
+}
+
+.left-sidebar .single-option .dropdown-container a:hover {
+    opacity: 0.5;
+    border-left: 4px solid var(--font-colors-toChange);
+    color: var(--font-colors-toChange);
+}
+
+.left-sidebar .single-option .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.small-left-sidebar .single-option {
+    font-size: 12px;
+    position: relative;
+}
+
+.small-left-sidebar .single-option b {
+    display: block;
+}
+
+.small-left-sidebar .single-option ul {
+    top: 0;
+    left: 100%;
+    border: 1px solid #000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+}
+
+.small-left-sidebar .single-option:hover>ul {
+    display: block;
+    color: #fff;
+}
+
+.small-left-sidebar .single-option ul li {
+    background: var(--main-bg-color);
+    color: var(--font-colors-toChange);
+    border-bottom: 1px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 12px;
+    width: 170px;
+    display: block;
+    font-size: small;
+    font-weight: 600;
+}
+
+.small-left-sidebar .single-option ul li:hover {
+    background-color: var(--sub-links-color);
+    color: var(--font-colors-toChange);
+}
+
+.left-sidebar .single-option:hover {
+    border-left: 4px solid var(--font-colors-toChange);
+}
+
+.small-left-sidebar .single-option:hover {
+    opacity: 0.5;
+}
+
+.left-sidebar .single-option.active-links {
+    background-color: var(--sub-links-color);
+    border-left: 4px solid var(--font-colors-toChange);
+}
+
+.small-left-sidebar .single-option.active-links {
+    background-color: var(--sub-links-color);
+}
+
+
+/* End  the left side bar  */
+
+
+/* Start the nav side bar  */
+
+.nav-bar {
+    margin-left: 15%;
+    font-size: 16px;
+    background: var(--main-bg-color);
+    position: relative;
+    color: var(--font-colors-toChange);
+}
+
+.full-width {
+    margin-left: 7% !important;
+}
+
+.nav-bar .fa-hand-point-right {
+    position: absolute;
+    left: -10px;
+    z-index: 10;
+    top: 15px;
+    color: var(--font-colors-toChange);
+    cursor: pointer;
+}
+
+.nav-bar .fa-hand-point-left {
+    position: absolute;
+    left: -20px;
+    z-index: 10;
+    top: 15px;
+    color: var(--font-colors-toChange);
+    cursor: pointer;
+}
+
+.exten-nav {
+    margin-left: 0;
+}
+
+.nav-bar .search {
+    position: absolute;
+    bottom: 14px;
+    right: 80px;
+    padding: 2px;
+}
+
+.nav-bar .search input:focus {
+    outline: var(--main-bg-color);
+    border-radius: 10px;
+}
+
+.nav-bar .search button:focus {
+    outline: var(--main-bg-color);
+}
+
+.nav-bar .profile {
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    padding: 2px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.nav-bar .dropdown button .cicle-around-incon {
+    padding: 10px;
+    border: 1px solid var(--sub-links-color);
+    border-radius: 50%;
+}
+
+.nav-bar .dropdown button i:hover {
+    opacity: 0.5;
+}
+
+
+/* End  the nav side bar  */
+
+
+/* Start sittings gear */
+
+.sitting-box {
+    position: fixed;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    z-index: 10000;
+    background-color: var(--main-bg-color);
+    min-height: 100vh;
+    transition: 1s;
+    border: 1px solid var(--main-bg-color);
+}
+
+.sitting-box.open {
+    right: 0;
+}
+
+.sitting-box .spinFont {
+    position: absolute;
+    left: -37px;
+    background: var(--sub-links-color);
+    text-align: center;
+    top: 100px;
+    border-radius: 19px 0 0 19px;
+    cursor: pointer;
+    border-right: 3px solid var(--main-bg-color);
+    border-top: 3px solid var(--main-bg-color);
+    border-bottom: 3px solid var(--main-bg-color);
+}
+
+.sitting-box .spinFont .fa-cog {
+    padding: 11px 0px;
+    width: 39px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.sitting-box .options {
+    padding: 10px;
+    background-color: var(--sub-links-color);
+    text-align: center;
+    margin: 10px;
+    border-radius: 18px;
+}
+
+.sitting-box .options h4 {
+    margin-top: 10px;
+    color: #fff;
+    border-bottom: 2px dotted var(--main-bg-color);
+    width: 100%;
+    font-size: 15px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.sitting-box .options .colors-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.sitting-box .options .colors-list li {
+    border-radius: 50%;
+    opacity: 0.5;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sitting-box .options .colors-list li.active {
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    opacity: 1 !important;
+    border: 3px solid #444;
+}
+
+.sitting-box .options button.yes,
+.sitting-box .options button.no {
+    margin-right: 7px;
+    width: 70px;
+    padding: 1px 20px;
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    opacity: 0.4;
+}
+
+.sitting-box .options button.yes:hover,
+.sitting-box .options button.no:hover {
+    opacity: 1;
+    color: #000;
+}
+
+.sitting-box .options button.active-random {
+    opacity: 1;
+}
+
+.sitting-box button.reset-options {
+    margin: 20px auto;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+}
+
+
+/* Add colors to sitting box*/
+
+.sitting-box .options .colors-list li:first-child {
+    background-color: #f81;
+}
+
+.sitting-box .options .colors-list li:nth-child(2) {
+    background-color: #00d20a;
+}
+
+.sitting-box .options .colors-list li:nth-child(3) {
+    background-color: #f00;
+}
+
+.sitting-box .options .colors-list li:nth-child(4) {
+    background-color: #fff;
+}
+
+.sitting-box .options .colors-list li:last-child {
+    background-color: #f18;
+}
+
+
+/* End sitting gear */
+
+
+/* drop down style*/
+
+.dropbtn {
+    border: none;
+}
+
+.dropbtn:focus {
+    outline: var(--main-bg-color);
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#button_wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: -40px;
+    background-color: var(--main-bg-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--font-colors-toChange);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--sub-links-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
