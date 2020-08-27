@@ -141,16 +141,16 @@ document.querySelector(".sitting-box .reset-options ").onclick = function() {
 $(function() {
 
     // add class to hide the left side bar
-    let Hideclass = $(".left-sidebar div").first().hasClass("open");
+    let Hideclass = $(".left-side-bar div").first().hasClass("open");
     let Rezietherightpanel = $('#hold-js div').first().hasClass("width-full-left-bar");
     if (Hideclass == true) {
         $("#append-hand-icon .left").on("click", function() {
-            $(".left-sidebar div").first().removeClass("open");
-            $(".left-sidebar div").first().addClass("close");
+            $(".left-side-bar div").first().removeClass("open");
+            $(".left-side-bar div").first().addClass("close");
             $('#append-hand-icon .right').addClass("fas fa-hand-point-right fa-2x");
             $('#append-hand-icon .left').removeClass("fas fa-hand-point-left fa-2x");
-            $(".small-left-sidebar").show();
-            $(".left-sidebar").addClass("hide");
+            $(".small-left-side-bar").show();
+            $(".left-side-bar").addClass("hide");
             $("nav.nav-bar").addClass("full-width");
             $('#hold-js .right-admin-panel').removeClass('width-full-left-bar').addClass('width-right-bar');
 
@@ -160,13 +160,13 @@ $(function() {
 
         })
         $("#append-hand-icon .right").on("click", function() {
-            $(".left-sidebar div").first().removeClass("close");
-            $(".left-sidebar div").first().addClass("open");
+            $(".left-side-bar div").first().removeClass("close");
+            $(".left-side-bar div").first().addClass("open");
             $('#append-hand-icon .left').addClass("fas fa-hand-point-left fa-2x");
             $('#append-hand-icon .right').removeClass("fas fa-hand-point-right fa-2x");
-            $(".small-left-sidebar").hide();
+            $(".small-left-side-bar").hide();
             $("nav.nav-bar").removeClass("full-width");
-            $(".left-sidebar").removeClass("hide");
+            $(".left-side-bar").removeClass("hide");
             $('#hold-js .right-admin-panel').addClass("width-full-left-bar").removeClass('width-right-bar');
 
 
@@ -194,12 +194,12 @@ $(function() {
     - This allows the user to have multiple
     dropdowns without any conflict */
 
-    var dropdown = document.querySelector(".left-sidebar .single-option .dropdown-btn");
+    var dropdown = document.querySelector(".left-side-bar .single-option .dropdown-btn");
     var i;
 
     for (i = 0; i < dropdown.length; i++) {
         dropdown[i].addEventListener("click", function() {
-            var dropdownContent = document.querySelector(".left-sidebar .single-option .dropdown-container ")
+            var dropdownContent = document.querySelector(".left-side-bar .single-option .dropdown-container ")
             if (dropdownContent.style.display === "block") {
                 dropdownContent.style.display = "none";
             } else {
@@ -210,21 +210,21 @@ $(function() {
 
     // add new side bar in case the user want to hide it
 
-    // let Hidesidebar = $(".left-sidebar").hasClass("hide");
+    // let Hidesidebar = $(".left-side-bar").hasClass("hide");
     // if (Hidesidebar == true) {
 
     //     $("#append-hand-icon .left").on("click", function() {
-    //         $(".left-sidebar").removeClass("hide");
-    //         $(".left-sidebar").show(1000);
-    //         $(".small-left-sidebar").addClass("hide");
-    //         $(".small-left-sidebar").hide(1000);
+    //         $(".left-side-bar").removeClass("hide");
+    //         $(".left-side-bar").show(1000);
+    //         $(".small-left-side-bar").addClass("hide");
+    //         $(".small-left-side-bar").hide(1000);
     //     })
     // } else {
     //     $("#append-hand-icon .right").on("click", function() {
-    //         $(".smal-left-sidebar").removeClass("hide");
-    //         $(".left-sidebar").hide(1000);
-    //         $(".left-sidebar").addClass("hide");
-    //         $(".small-left-sidebar").show(1000);
+    //         $(".smal-left-side-bar").removeClass("hide");
+    //         $(".left-side-bar").hide(1000);
+    //         $(".left-side-bar").addClass("hide");
+    //         $(".small-left-side-bar").show(1000);
 
     //     })
     // }
@@ -232,7 +232,7 @@ $(function() {
 
     // check if the class is exit then append the hand icon to html layout
 
-    let CheckClasss = $(".left-sidebar div").first().hasClass("open");
+    let CheckClasss = $(".left-side-bar div").first().hasClass("open");
     if (CheckClasss == true) {
         $('#append-hand-icon .left').addClass("fas fa-hand-point-left fa-2x");
     } else {
@@ -243,7 +243,7 @@ $(function() {
 // active link for links left side bar
 $(document).ready(function() {
     $('ul').on('click', 'li', function() {
-        $('ul li.active-links').removeClass('active-links');
+        $('ul .active-links').removeClass('active-links');
         $(this).addClass('active-links');
     });
 

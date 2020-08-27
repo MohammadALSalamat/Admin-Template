@@ -1,0 +1,38 @@
+:root {
+    --main-bg-color: #1b1e2d;
+    --sub-links-color: #4a5568;
+    --font-colors-toChange: #fff;
+}
+
+
+/* start the tables */
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: 75px;
+    display: inline-block;
+    color: white !important;
+    background: #2d3748 !important;
+    border: 1px solid #2d3748 !important;
+}
+
+div.dataTables_wrapper:focus {
+    outline: none !important;
+}
+
+div.dataTables_wrapper div.dataTables_length:focus select {
+    outline: none !important;
+}
+
+div.dataTables_wrapper div.dataTables_length select:focus {
+    outline: none !important;
+}
+
+.table,
+.card {
+    border: 1px solid #1a202c !important;
+    color: var(--font-colors-toChange);
+}
+
+.table.table-bordered {
+    border: 1px solid #fff;
+}

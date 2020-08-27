@@ -1,23 +1,29 @@
-<nav class="left-sidebar">
+<nav class="left-side-bar">
     <div class="open">
         <div class="logo mt-0 flex ">
             <img src="{{ url('images/logo-dark-abo.png') }}" alt="logo">
         </div>
         <div class="list-options">
             <ul class="group-options">
-                <li class="single-option  active-links">Dashborad</li>
+                <a href="{{ route('dashboard') }}">
+                    <li class="single-option active-links">Dashborad</li>
+                </a>
                 <li class="single-option ">
-                    Users
-
-                </li>
-                <li class="single-option ">
-                    <button class="dropdown-btn">Videos
+                    <button class="dropdown-btn">Users
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-container">
-                        <a href="#">Videos 1</a>
-                        <a href="#">Videos 2</a>
-                        <a href="#">Videos 3</a>
+                        <a href="{{ route('view-user') }}">View Users</a>
+                        <a href="#">ban Users</a>
+                    </div>
+                </li>
+                <li class="single-option ">
+                    <button class="dropdown-btn">Forms
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">basic Forms</a>
+                        <a href="#">Validation Forms</a>
                     </div>
                 </li>
                 <li class="single-option ">Images</li>
@@ -27,7 +33,7 @@
         </div>
     </div>
 </nav>
-<nav class="small-left-sidebar hide">
+<nav class="small-left-side-bar hide">
     <div class="logo mt-0 flex ">
         <i class="fas fa-home fa-2x"></i>
     </div>

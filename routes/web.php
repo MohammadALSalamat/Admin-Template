@@ -18,3 +18,7 @@ Route::match(['get', 'post'], '/', 'AdminPanelController@login')->name('showLogi
 Route::match(['get', 'post'], '/admin/register', 'AdminPanelController@register')->name("registerAdminPage");
 Route::match(['get', 'post'], '/Insert', 'AdminPanelController@createAccount')->name("Insert-data");
 Route::match(['get', 'post'], '/dashboard', 'AdminPanelController@dashboard')->name('dashboard');
+
+// users button
+
+Route::get('/users', 'Users@viewUsers')->name('view-user');

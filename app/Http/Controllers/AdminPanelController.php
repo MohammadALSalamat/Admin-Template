@@ -50,4 +50,9 @@ class AdminPanelController extends Controller
         }
         return view('Admin-Side.admin-login');
     }
+
+    public function dashboard()
+    {
+        return view('Admin-Side.dashboard');
+    }
 }

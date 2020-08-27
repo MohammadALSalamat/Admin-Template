@@ -3,7 +3,9 @@ module.exports = {
     theme: {
         extend: {},
     },
-    variants: {},
+    variants: {
+        tableLayout: ['responsive', 'hover', 'focus'],
+    },
     plugins: [
         // ...
         require('tailwindcss'),
