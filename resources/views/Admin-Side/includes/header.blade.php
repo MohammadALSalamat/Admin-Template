@@ -1,5 +1,5 @@
-<nav class="nav-bar border-b border-gray-800 ">
-    <div id="append-hand-icon" class=" container flext justify-between item-center px-2 py-2">
+<nav id="myHeader" class="nav-bar border-b border-gray-800 ">
+    <div id="append-hand-icon" class=" container justify-between item-center px-2 py-2">
         <i class="left"></i>
         <i class="right"></i>
         <ul class="flex flex-col md:flex-row mt-3 md:mt-0 items-center">
@@ -57,7 +57,8 @@
 
         </ul>
         <div class=" search float-right nav bg-gray-600">
-            <input type="text" placeholder="Search.." name="search" class="nav bg-gray-600 items-center focus:bg-gray-600">
+            <input type="text" placeholder="Search.." name="search"
+                class="nav bg-gray-600 items-center focus:bg-gray-600">
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
         <div class="profile">
