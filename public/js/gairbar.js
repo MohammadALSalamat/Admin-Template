@@ -142,6 +142,7 @@ $(function() {
 
     // add class to hide the left side bar
     let Hideclass = $(".left-sidebar div").first().hasClass("open");
+    let Rezietherightpanel = $('#hold-js div').first().hasClass("width-full-left-bar");
     if (Hideclass == true) {
         $("#append-hand-icon .left").on("click", function() {
             $(".left-sidebar div").first().removeClass("open");
@@ -151,6 +152,7 @@ $(function() {
             $(".small-left-sidebar").show();
             $(".left-sidebar").addClass("hide");
             $("nav.nav-bar").addClass("full-width");
+            $('#hold-js .right-admin-panel').removeClass('width-full-left-bar').addClass('width-right-bar');
 
 
 
@@ -165,6 +167,7 @@ $(function() {
             $(".small-left-sidebar").hide();
             $("nav.nav-bar").removeClass("full-width");
             $(".left-sidebar").removeClass("hide");
+            $('#hold-js .right-admin-panel').addClass("width-full-left-bar").removeClass('width-right-bar');
 
 
 
@@ -234,7 +237,6 @@ $(function() {
         $('#append-hand-icon .left').addClass("fas fa-hand-point-left fa-2x");
     } else {
         $('#append-hand-icon .right').addClass("fas fa-hand-point-right fa-2x");
-
     }
 
 });
