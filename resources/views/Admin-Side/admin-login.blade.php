@@ -2,43 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
-    <link rel="stylesheet" href="{{ url('css/style.css') }}">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Fall Star Login Admin page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/backend_css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="{{ url('css/backend_css/bootstrap-responsive.min.css ') }}" />
+    <link rel="stylesheet" href="{{ url('css/backend_css/matrix-login.css') }} " />
+    <link rel="stylesheet" href="{{ url('css/backend_css/theme.css ') }}" />
+    <link rel="stylesheet" href="{{ url('css/backend_css/animation.css ') }}" />
+    <link href="{{ url('fonts/backend_fornts/css/font-awesome.css ') }}" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="body">
-    <div class="login-page">
-        <img src="{{ asset('images/logo-abo.png') }}" alt="Logo">
-        <p>Sing in with your Google Account</p>
-        @if ($message = Session::get('error'))
-            <div class="alert alert-danger alert-block" style="width:30%;font-size:10px">
-                <button type="button" class="close" data-dismiss="alert">×</button>
-                <strong>{{ $message }}</strong>
+<body>
+    <!--Stars fall-->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <!--End star fall-->
+
+    <!--Start the admin panel -->
+    <div id="loginbox">
+        <form id="loginform" class="form-vertical" action="{{ route('showLoginPage') }}" method="POST" }}>
+            @csrf
+            <div class="control-group normal_text text-center">
+                <h3 style="color: silver; font-size: 50px">
+                    <strong style="color: #c44">Admin</strong>Panel
+                </h3>
             </div>
-        @endif
-        @if ($message = Session::get('success'))
-            <div class="alert alert-success alert-block">
-                <button type="button" class="close" data-dismiss="alert">×</button>
-                <strong>{{ $message }}</strong>
+            <hr style="width: 100px; margin: auto; margin-bottom: 20px" />
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box1">
+                        <span class="add-on bg_lg"><i class="icon-user"></i></span><input type="text" name="email"
+                            placeholder="Enter Your Name" autocomplete="off" class="login" />
+                    </div>
+                </div>
             </div>
-        @endif
-        <div class="card-login">
-            <img src="{{ asset('images/profile.jpg') }}" alt="">
-            <form action="{{ route('showLoginPage') }}" method="POST">
-                @csrf
-                <input type="text" placeholder="Email" name="email" class="email">
-                <input type="password" placeholder="Password" name="pass">
-                <input type="submit" value="Sign In">
-                <a href="{{ route('registerAdminPage') }}"><input type="button" value="Register Now"></a>
-            </form>
-        </div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box2">
+                        <span class="add-on bg_ly" style="margin-right: 5%"><i class="icon-lock"></i></span><input
+                            type="password" name="pass" placeholder="Enter Your Password" class="pass"
+                            autocomplete="off" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <span class="login"><button type="submit" class="btn btn-primary hvr-sweep-right" style="
+                padding: 6px 70px;
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+              ">
+                        Login
+                    </button>
+                </span>
+                <span>
+                    <a href="#" class="flip-link"><button type="button" class="btn btn-light hvr-sweep-left" style="
+                  padding: 6px 70px;
+                  display: block;
+                  width: 100%;
+                  margin-bottom: 20px;
+                ">
+                            Lost password ?
+                        </button></a></span>
+            </div>
+        </form>
     </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
+
+    <script src="{{ url('js/backend_js/jquery.min.js') }}"></script>
+    <script src="{{ url('js/backend_js/matrix.login.js') }}"></script>
 </body>
 
 </html>
