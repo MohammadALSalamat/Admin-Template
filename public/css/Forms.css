@@ -1,0 +1,24 @@
+:root {
+    --main-bg-color: #1b1e2d;
+    --sub-links-color: #4a5568;
+    --font-colors-toChange: #fff;
+}
+
+
+/* Start uplode videos css */
+
+.uplode-videos {
+    position: absolute !important;
+    left: 35% !important;
+}
+
+.uplode-videos form {
+    background: var(--sub-links-color) !important;
+}
+
+.uplode-videos form label {
+    color: var(--font-colors-toChange) !important;
+}
+
+
+/* End uplode videos css */

@@ -20,5 +20,8 @@ Route::match(['get', 'post'], '/Insert', 'AdminPanelController@createAccount')->
 Route::match(['get', 'post'], '/dashboard', 'AdminPanelController@dashboard')->name('dashboard');
 
 // users button
-
 Route::get('/users', 'Users@viewUsers')->name('view-user');
+
+// videos button
+
+Route::get('/uplode-videos', "VideosController@uplodeVideo")->name('uplode-video');

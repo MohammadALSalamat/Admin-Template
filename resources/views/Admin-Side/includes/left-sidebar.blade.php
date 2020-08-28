@@ -18,12 +18,12 @@
                     </div>
                 </li>
                 <li class="single-option ">
-                    <button class="dropdown-btn">Forms
+                    <button class="dropdown-btn">Video
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-container">
-                        <a href="#">basic Forms</a>
-                        <a href="#">Validation Forms</a>
+                        <a href="{{ route('uplode-video') }}">Uplode Video</a>
+                        <a href="#">View Videos list</a>
                     </div>
                 </li>
                 <li class="single-option ">Images</li>

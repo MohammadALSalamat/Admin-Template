@@ -5,7 +5,7 @@
         <!-- Bread crumb and right sidebar toggle -->
         <!-- ============================================================== -->
         <div class="page-breadcrumb bg-gray-800 mb-2 >
-                                                                                                                                                                                    <div class="
+                                                                                                                                                                                                                            <div class="
             row">
             <div class="col-12 d-flex no-block align-items-center">
                 <h4 class="page-title">Tables</h4>
@@ -56,39 +56,39 @@
                                         <td>2011/04/25</td>
                                         <td>
                                             <a href="#" class="flip-link"><button type="button"
-                                                    class="btn btn-light hvr-sweep-left">
+                                                    class="btn btn-light hvr-sweep-left px-4">
                                                     Edit
                                                 </button></a>
                                             <a href="#" class="flip-link"><button type="button"
-                                                    class="btn btn-danger hvr-sweep-left">
-                                                    Delete
+                                                    class="btn btn-danger hvr-sweep-left px-4"">
+                                                        Delete
 
-                                                </button></a>
-                                            <a href="#" class="flip-link"><button type="button"
-                                                    class="btn btn-info hvr-sweep-left">
-                                                    ban
-                                                </button></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>End-Name</th>
-                                        <th>End-Position</th>
-                                        <th>End-Office</th>
-                                        <th>End-Age</th>
-                                        <th>End-Start date</th>
-                                        <th>End-Salary</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                                                    </button></a>
+                                                <a href=" #" class="flip-link"><button type="button"
+                                                        class="btn btn-info hvr-sweep-left px-4"">
+                                                        ban
+                                                    </button></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>End-Name</th>
+                                            <th>End-Position</th>
+                                            <th>End-Office</th>
+                                            <th>End-Age</th>
+                                            <th>End-Start date</th>
+                                            <th>End-Action</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            </div>
 
-    </div>
+            </div>
 @endsection

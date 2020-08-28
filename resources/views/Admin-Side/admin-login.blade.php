@@ -28,7 +28,7 @@
             @csrf
             <div class="control-group normal_text text-center">
                 <h3 style="color: silver; font-size: 50px">
-                    <strong style="color: #c44">Admin</strong>Panel
+                    <strong style="color: rgb(38, 104, 38)">Admin</strong>Panel
                 </h3>
             </div>
             <hr style="width: 100px; margin: auto; margin-bottom: 20px" />
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="form-actions">
-                <span class="login"><button type="submit" class="btn btn-primary hvr-sweep-right" style="
+                <span class="login"><button type="submit" class="btn btn-success hvr-sweep-right" style="
                 padding: 6px 70px;
                 display: block;
                 width: 100%;

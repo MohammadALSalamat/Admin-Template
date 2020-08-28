@@ -17,6 +17,8 @@
     <link href="{{ url('css/dataTables.bootstrap4.css') }}" rel="stylesheet">
     <link href="{{ url('css/Tables-desgin.css') }}" rel="stylesheet">
     <link href="{{ url('css/tables-add-desgin.css') }}" rel="stylesheet">
+    <!-- Form desgin-->
+    <link href="{{ url('css/Forms.css') }}" rel="stylesheet">
 
 </head>
 
