@@ -14,7 +14,6 @@
                     </button>
                     <div class="dropdown-container">
                         <a href="{{ route('view-user') }}">View Users</a>
-                        <a href="#">ban Users</a>
                     </div>
                 </li>
                 <li class="single-option ">
@@ -23,7 +22,6 @@
                     </button>
                     <div class="dropdown-container">
                         <a href="{{ route('uplode-video') }}">Uplode Video</a>
-                        <a href="#">View Videos list</a>
                     </div>
                 </li>
                 <li class="single-option ">Images</li>

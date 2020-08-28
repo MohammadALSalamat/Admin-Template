@@ -22,7 +22,7 @@
     <!-- End Bread crumb and right sidebar toggle -->
     <!-- ============================================================== -->
     <div class="uplode-videos w-full sm:max-w-sm md:max-w-md lg:max-w-lg mt-10">
-        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form class="shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-gray-800">
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                     Video Name
@@ -52,8 +52,8 @@
                     Uplode Video
                 </label>
                 <input
-                    class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                    id="uplode-video" type="file" placeholder="******************">
+                    class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-white mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                    id="uplode-video" type="file" name="uplode-video">
             </div>
             <div class="flex items-center justify-between mb-0">
                 <button
