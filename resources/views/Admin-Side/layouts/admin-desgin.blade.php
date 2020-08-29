@@ -46,6 +46,9 @@
     <script src="{{ url('js/waves.js') }}"></script>
     <script src="{{ url('js/sidebarmenu.js') }}"></script>
     <script src="{{ url('js/custom.min.js') }}"></script>
+    <script src="{{ url('js/sparkline.js') }}"></script>
+    <script src="{{ url('js/popper.min.js') }}"></script>
+    <script src="{{ url('js/bootstrap.min.js') }}"></script>
     <script src="https://www.jsdelivr.com/package/npm/bulma"></script>
     <script>
         /****************************************
