@@ -55,4 +55,12 @@ class AdminPanelController extends Controller
     {
         return view('Admin-Side.dashboard');
     }
+
+
+    // update sittings
+
+    public function update_sittings()
+    {
+        return view('Admin-Side.sittings.update-name');
+    }
 }

@@ -25,7 +25,9 @@
                     </div>
                 </li>
                 <li class="single-option ">Images</li>
-                <li class="single-option ">Sittings</li>
+                <a href="{{ route('show-sittings') }}">
+                    <li class="single-option ">Sittings</li>
+                </a>
                 <li class="single-option ">Log out</li>
             </ul>
         </div>

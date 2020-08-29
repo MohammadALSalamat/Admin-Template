@@ -43,6 +43,9 @@
     <script src="{{ url('js/gairbar.js') }}"></script>
     <!-- Tables js-->
     <script src="{{ url('js/datatables.min.js') }}"></script>
+    <script src="{{ url('js/waves.js') }}"></script>
+    <script src="{{ url('js/sidebarmenu.js') }}"></script>
+    <script src="{{ url('js/custom.min.js') }}"></script>
     <script src="https://www.jsdelivr.com/package/npm/bulma"></script>
     <script>
         /****************************************
