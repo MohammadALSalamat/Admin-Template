@@ -1,3 +1,6 @@
+<?php
+// get the current url of the page
+$url = url()->current(); ?>
 <nav class="left-side-bar">
     <div class="open">
         <div class="logo mt-0 flex ">

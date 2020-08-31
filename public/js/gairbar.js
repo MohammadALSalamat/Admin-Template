@@ -249,6 +249,7 @@ $(document).ready(function() {
 
 });
 
+
 // sticky header
 window.onscroll = function() {
     myFunction()

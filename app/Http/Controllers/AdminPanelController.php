@@ -27,7 +27,7 @@ class AdminPanelController extends Controller
             $InsertData->password = md5($data['pass']);
             $InsertData->save();
 
-            return redirect('/admin')->with("success", " Welcome " . $data['name'] . " you can Enter the page  ");
+            return redirect('/')->with("success", " Welcome " . $data['name'] . " you can Enter the page  ");
         } else {
             return redirect()->with("error", " Sorry  you can not Enter the page  ");
         }
@@ -45,7 +45,7 @@ class AdminPanelController extends Controller
             if ($getInfo > 0) {
                 return view('Admin-Side.dashboard');
             } else {
-                return redirect('/admin')->with("error", " you have a problem please fix it ");
+                return redirect('/')->with("error", " you have a problem please fix it ");
             }
         }
         return view('Admin-Side.admin-login');
